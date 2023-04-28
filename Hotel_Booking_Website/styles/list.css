@@ -1,0 +1,72 @@
+.hotelImages {
+    height: 200px;
+    width: 250px;
+}
+
+.hotel {
+    margin: 4% 5% 0% 5%;
+    background-color: lightgrey;
+    width: 40%;
+    float: left;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+}
+
+.hotel:hover {
+    background-color: rosybrown;
+    color: black;
+}
+
+#list-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 6%;
+}
+/* Navigation of list and map view */
+#pills-tab {
+    justify-content: center;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #007bff;
+    color: black;
+}
+
+.nav-link:hover {
+    color: black;
+}
+@media screen and (max-width: 576px) {
+   #list-container{
+    margin-bottom: 150%;
+   }
+   #pills-tab{
+    padding-top: 15%;
+   }
+   .hotel{
+        width: 90%;
+        flex-direction: column;
+   }
+   .hotelImages {
+        width: 100%;
+    }
+    #map-view > img {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #pills-tab {
+        padding-top: 5%;
+    }
+    
+    .hotel{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #map-view > img {
+        width: 100%;
+    }
+}

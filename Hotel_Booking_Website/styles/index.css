@@ -1,0 +1,113 @@
+#cityImage {
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px grey;
+}
+/* Setting Background Image and setting related properties and styling */
+.backgroundImage {
+    background: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg") no-repeat;
+    height: 380px;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#searchBar {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+}
+
+#search-input {
+    background-color: #f1f1f1;
+    border: 1px solid transparent;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cityImages {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4% 0%;
+}
+
+.cityImages_innerText {
+    position: relative;
+}
+/* Overlaying of text over City image */
+.textoverlay {
+    position: absolute;
+    transition: 0.0s ease;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 25%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cityImages_innerText:hover .textoverlay {
+    opacity: 1;
+}
+
+.textoverlay span {
+    position: relative;
+    top: 45%;
+    color: #f1f1f1;
+    /* transform: translate(-50%, -50%); */
+}
+
+#viewMore {
+    margin-bottom: 6%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 575.99px) {
+    #search-bar {
+        width: 60%;
+    }
+    .cityImages {
+        flex-direction: column;
+        margin: auto;
+    }
+    #cityImage{
+        height: 200px;
+        width: 200px;
+    }
+    .cityImages_innerText{
+        padding: 4% 0%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #search-bar {
+        width: 60%;
+    }
+    .cityImages {
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    #cityImage{
+        height: 250px;
+        width: 260px;
+    }
+    .cityImages_innerText{
+        padding: 4% 0%;
+    }
+}

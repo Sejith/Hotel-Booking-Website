@@ -1,0 +1,74 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 10%;
+}
+
+#HotelDescription {
+    background-color: rgb(132, 136, 139);
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+}
+
+.radissonBLue {
+    max-height: 300px;
+    max-width: 270px;
+}
+
+#flex_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: black 1px solid;
+    border-radius: 5px;
+    margin: 0% 2%;
+    background-color: rosybrown;
+}
+
+#flex_container strong {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+.hotel-name-rating {
+    padding: 3% 3% !important;
+}
+
+@media screen and (max-width: 576px) {
+    #HotelDescription {
+        width: 100%;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #container {
+        margin-top: 20%;
+        margin-bottom: 20%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #pay-now{
+        align-self: center;
+    }
+
+    #flex_container {
+        align-items: normal;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .hotel-name-rating {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #HotelDescription {
+        width: 80%;
+        margin: 5% auto;
+    }
+}
