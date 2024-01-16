@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Importing bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/loader.css">
+    <title>Index</title>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div class="main-container">
+        <header class="header-footer" id="headerID"></header>
+        <!-- Content Div -->
+        <div class="flex-container">
+            <div class="backgroundImage">
+                <div id="searchBar">
+                    <form autocomplete="off">
+                        <input type="text" id="search-input" placeholder="City">
+                    </form>
+                </div>
+            </div>
+            <div class="cityImages">
+                <div>
+                    <div class="cityImages_innerText">
+                        <a href="./Delhi/Delhi list.html"><img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+                                id="cityImage" alt="Delhi">
+                            <div class="textoverlay">
+                                <span>Delhi</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="cityImages_innerText">
+                        <a href="./Goa/Goa list.html"><img
+                            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" id="cityImage"
+                            alt="Goa">
+                        <div class="textoverlay">
+                            <span>Goa</span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="cityImages_innerText">
+                        <a href="./Hyderabad/Hyderabad list.html"><img
+                            src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
+                            id="cityImage" alt="Hyderabad">
+                        <div class="textoverlay">
+                            <span>Hyderabad</span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="cityImages_innerText">
+                        <a href="./Kolkata/Kolkata list.html"><img
+                            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
+                            id="cityImage" alt="Kolkata">
+                        <div class="textoverlay">
+                            <span>Kolkata</span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div id="view-more-city-cards">
+            <div class="cityImages">
+                <div>
+                    <div class="cityImages_innerText">
+                        <a href="./Chennai/Chennai list.html"><img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg"
+                                id="cityImage" alt="Chennai">
+                            <div class="textoverlay">
+                                <span>Chennai</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="cityImages_innerText">
+                        <a href="./Agra/Agra list.html"><img
+                            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg" id="cityImage"
+                            alt="Agra">
+                        <div class="textoverlay">
+                            <span>Agra</span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="cityImages_innerText">
+                        <a href="Jaipur/Jaipur list.html"><img
+                            src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg"
+                            id="cityImage" alt="Jaipur">
+                        <div class="textoverlay">
+                            <span>Jaipur</span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="cityImages_innerText">
+                        <a href="Bengaluru/Bengaluru list.html"><img
+                            src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"
+                            id="cityImage" alt="Bengaluru">
+                        <div class="textoverlay">
+                            <span>Bengaluru</span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <a id="viewMore">
+                <button type="button" id="viewMoreBtn" class="btn btn-secondary" onclick="viewMore()">View More</button></a>
+        </div>
+        <footer class="header-footer" id="footerID">
+        </footer>
+    </div>
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

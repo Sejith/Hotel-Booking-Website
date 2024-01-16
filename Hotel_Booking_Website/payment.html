@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles/payment.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <title>Payment</title>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div class="main-container">
+        <header class="header-footer" id="headerID"></header>
+        <div id="container">
+            <div id="HotelDescription">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                    class="radissonBLue" alt="Radisson BLue">
+                <div class="hotel-name-rating">
+                    <h2>Radisson Blu Hotel</h2>
+                    <p>#38 of 1,289 hotels in New Delhi</p>
+                    <p>National Highway 8, New Delhi 110017 India</p>
+                </div>
+            </div>
+            <div id="flex_container">
+                <div id="customerDetails">
+                    <p id="name"></p> 
+                    <p id="adult"></p>
+                    <p id="from-date"></p>
+                    <p id="to-date"></p>
+                </div>
+                <div id="amount">
+                    <p id="tariff"></p>
+                    <p id="amount"></p>
+                </div>
+                <a href="#" id="pay-now">
+                    <button type="button" id="pay-now-button" class="btn btn-success" onclick="" >Pay Now</button>
+                </a>
+            </div>
+        </div>
+        <footer class="header-footer" id="footerID">
+        </footer>
+    </div>
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/payment.js"></script>
+</body>
+
+</html>
